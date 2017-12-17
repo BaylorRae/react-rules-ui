@@ -5,7 +5,7 @@ const { CheckerPlugin } = require('awesome-typescript-loader');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
 
   output: {
     filename: 'rules-ui.js',
@@ -13,13 +13,13 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
 
   module: {
     loaders: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         loader: 'awesome-typescript-loader'
       }
     ]
