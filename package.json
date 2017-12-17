@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/BaylorRae/react-rules-ui#readme",
   "devDependencies": {
+    "ava": "^0.24.0",
     "awesome-typescript-loader": "^3.4.1",
     "webpack": "^3.10.0"
   }
