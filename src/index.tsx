@@ -1,6 +1,6 @@
 import React from "react";
 
-interface GreetProps {
+export interface GreetProps {
   name: string
 }
 
@@ -8,3 +8,4 @@ const greet = (props: GreetProps) => (
   <div>Welcome {props.name}</div>
 );
 
+export default greet;

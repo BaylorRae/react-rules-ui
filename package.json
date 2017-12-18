@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "ava"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,13 +22,35 @@
     "url": "https://github.com/BaylorRae/react-rules-ui/issues"
   },
   "homepage": "https://github.com/BaylorRae/react-rules-ui#readme",
-  "devDependencies": {
-    "@types/react": "^16.0.31",
-    "ava": "^0.24.0",
-    "awesome-typescript-loader": "^3.4.1",
-    "webpack": "^3.10.0"
+  "jest": {
+    "setupTestFrameworkScriptFile": "raf/polyfill",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   },
-  "peerDependencies": {
-    "react": "^16.2.0"
+  "devDependencies": {
+    "@types/enzyme": "^3.1.6",
+    "@types/enzyme-adapter-react-16": "^1.0.1",
+    "@types/jest": "^21.1.8",
+    "@types/react": "^16.0.31",
+    "awesome-typescript-loader": "^3.4.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jest": "^21.2.1",
+    "raf": "^3.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "ts-jest": "^21.2.4",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
   }
 }
