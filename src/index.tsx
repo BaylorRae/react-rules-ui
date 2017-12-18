@@ -1,11 +1,7 @@
-import React from "react";
+import { Group, GroupProps, GroupScope } from "./components/group";
 
-export interface GreetProps {
-  name: string
+export {
+  Group,
+  GroupProps,
+  GroupScope
 }
-
-const greet = (props: GreetProps) => (
-  <div>Welcome {props.name}</div>
-);
-
-export default greet;
